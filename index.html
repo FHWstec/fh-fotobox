@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hochschulsport Wedel-PTL Bund e.V. | Fotobox</title>
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <link rel="stylesheet" href="./css/jquery-ui.min.css">
+        <link rel="stylesheet" href="./css/keyboard.min.css">
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+    <body>
+        <canvas id="snowflakes"></canvas>
+
+        <div id="ui">
+            <div id="camera" style="width:640px; height:480px;"></div>
+            <a id="start" href="javascript:void(startBooth())">START</a>
+            <div id="help">Wir machen drei Bilder hintereinander mit 3 Sekunden Pause dazwischen. Drücke Start sobald du bereit bist.</div>
+            <div id="countdown">3</div>
+            <div id="result">
+                <canvas id="canvas" width="3543" height="2362"></canvas>
+                <div id="print">
+                    Drucken?
+                    <a href="javascript:void(print())">JA</a>
+                    <a href="javascript:void(startOver())">NEIN</a>
+                </div>
+            </div>
+            <div id="printing">Wird gedruckt...</div>
+            <div id="email">
+                <div id="email_close"><a href="javascript:void(email_close())">&times;</a></div>
+                <p><label for="email_inpt">Gebe deine E-Mail-Adresse ein:</label></p>
+                <p><input id="email_inpt" type="email"></p>
+                <p>
+                    <a href="javascript:void(email_send())">SENDEN</a>
+                </p>
+            </div>
+            <div id="overlay"></div>
+        </div>
+
+        <script src="js/jquery-latest.min.js"></script>
+        <script src="js/jquery-migrate-3.0.0.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery.keyboard.min.js"></script>
+        <script src="js/webcam.js"></script>
+        <script src="js/snowflakes.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

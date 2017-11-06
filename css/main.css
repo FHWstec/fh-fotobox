@@ -1,0 +1,174 @@
+body, html {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Oswald", sans-serif;
+}
+#ui {
+    width: 100%;
+    height: 100%;
+    background-color: #091324;
+}
+#camera {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -240px 0px 0px -320px;
+    opacity: 1;
+}
+#start {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 320px;
+    height: 92px;
+    background: url('../img/btn_start.png') no-repeat;
+    margin: -46px 0px 0px -160px;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 80px;
+    font-size: 35px;
+    transform: scale(0.8);
+    animation: blink 7s infinite;
+}
+#help {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    color: #ffffff;
+    text-align: center;
+    margin: 260px 0px 0px -200px;
+}
+@keyframes blink {
+    0%   { transform: scale(0.8); }
+    44%   { transform: scale(0.8); }
+    47% { transform: scale(1); }
+    50% { transform: scale(0.8); }
+    53% { transform: scale(1); }
+    56% { transform: scale(0.8); }
+    100% { transform: scale(0.8); }
+}
+#countdown {
+    display: none;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 250px;
+    margin: -125px 0px 0px 0px;
+    color: #ffffff;
+    font-size: 200px;
+    text-align: center;
+}
+#overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+}
+#result {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -240px 0px 0px -320px;
+}
+#canvas {
+    width: 640px;
+    height: auto;
+}
+#print {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 40px;
+    color: #ffffff;
+}
+#print a,
+#email a {
+    display: inline-block;
+    background: #D84D4D;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-left: 20px;
+}
+#printing {
+    display: none;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: auto;
+    margin: 260px 0px 0px 0px;
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+}
+#email {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 250px;
+    margin: -125px 0px 0px -250px;
+    color: #000000;
+    background: #ffffff;
+    font-size: 30px;
+    text-align: center;
+}
+#email_close {
+    position: absolute;
+    top: -14px;
+    right: 10px;
+    font-size: 50px;
+}
+#email_close a {
+    display: inline;
+    background: none;
+    color: #000;
+    padding: 0;
+}
+#email_inpt {
+    font: inherit;
+    width: 90%;
+    text-align: center;
+    border-radius: 0px;
+}
+
+.ui-widget-content {
+    background: #ffffff;
+    color: #000000;
+}
+.ui-corner-all {
+    border-radius: 0px;
+}
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+    font: inherit;
+    font-family: "Oswald", sans-serif;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    background: #555;
+    border: none;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    background: #D84D4D;
+}
+.ui-keyboard-button {
+    height: 3em;
+    min-width: 3em;
+}
+#snowflakes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    pointer-events: none;
+}
